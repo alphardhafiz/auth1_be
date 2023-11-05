@@ -1,0 +1,37 @@
+// Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "Buci",
+  "email": "buci@gmail.com",
+  "password": "123456",
+  "confPassword": "123456",
+  "role": "user"
+}
+
+###
+// get All Users
+GET http://localhost:5000/users
+
+###
+// get User By Id
+GET http://localhost:5000/users/6cce647f-3c4d-4d28-8d35-91cb0e107d84
+
+###
+// Update a user
+PATCH  http://localhost:5000/users/6cce647f-3c4d-4d28-8d35-91cb0e107d84
+Content-Type: application/json
+
+{
+  "name": "apis",
+  "email": "apis@gmail.com",
+  "password": "",
+  "confPassword": "",
+  "role": "user"
+}
+
+###
+// delete User By Id
+DELETE  http://localhost:5000/users/46920015-0181-4bcf-b680-e87a2febdfea
+
